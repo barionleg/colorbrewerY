@@ -35,8 +35,8 @@ var fields = [
 ];
 
 var arc = d3.svg.arc()
-    .innerRadius(width / 6.5 - 60)
-    .outerRadius(width / 6.5 - 5)
+    .innerRadius(width / 3.5 - 60)
+    .outerRadius(width / 3.5 - 5)
     .startAngle(0)
     .endAngle(function(d) { return (d.value / d.size) * 2 * Math.PI; });
 
