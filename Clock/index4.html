@@ -36,8 +36,8 @@ var fields = [
 ];
 
 var arc = d3.svg.arc()
-    .innerRadius(width / 6.5 - 60)
-    .outerRadius(width / 6.5 - 5)
+    .innerRadius(width / 8.5 - 60)
+    .outerRadius(width / 8.5 - 5)
     .startAngle(0)
     .endAngle(function(d) { return (d.value / d.size) * 2 * Math.PI; });
 
@@ -48,7 +48,7 @@ var svg = d3.select("body").append("svg")
 var field = svg.selectAll(".field")
     .data(fields)
   .enter().append("g")
-    .attr("transform", function(d, i) { return "translate(" + (i * 2 + 1.25) / 6.5 * width + "," + height / 2 + ")"; })
+    .attr("transform", function(d, i) { return "translate(" + (i * 2 + 1.25) / 8.5 * width + "," + height / 2 + ")"; })
     .attr("class", "field");
 
 field.append("path")
