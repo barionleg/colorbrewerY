@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+  </style>
+</head>
+<meta charset="utf-8">
+<body>
+  
+<svg width="960" height="520"></svg>
+  	
+<script src="https://d3js.org/d3.v4.min.js"></script>
+  
+<script>
+console.clear()
+
+// set up the graphic
+const svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height")
+
+// Set up some scales
+const num_slices = 10,
+    angle = d3.scaleLinear()
+    		.range([0, 360]) // working in degrees
+    		.domain([0, num_slices]),
+    origin = svg.append('g')
+    		.attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
+
+// generate some data
+const data = d3.range(num_slices).map(function(d) {
+    return {
+        val1: d,
+        val2: (d + 1) * 20
+    }
+})
+
+// create arc generator and map our data to arcs
+const arc = d3.arc(),
+    arcs = data.map(function(d) {
+        return {
+            startAngle:  deg2rad(angle(d.val1)), // working in degrees
+            endAngle: 	 deg2rad(angle(d.val1 + 1)),
+            innerRadius: 6,
+            outerRadius: d.val2
+        }
+    })
+
+// create our SVG elements
+origin.selectAll(".arcs")
+    		.data(arcs)
+    .enter().append("path")
+        .attr("d", arc)
+        .style("fill", "whitesmoke")
+        .style("stroke-width", 2)
+        .style("stroke", "darkslategray")
+
+// degrees to radians helper
+function deg2rad(degrees) {
+    return degrees * (Math.PI / 180)
+}
+
+</script>
+</body>
+</html>
