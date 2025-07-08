@@ -1,5 +1,6 @@
-Clock code default:
+# Clock code default:
 
+```
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
@@ -86,3 +87,30 @@ function arcTween(b) {
 }
 
 </script>
+```
+
+
+___
+___
+
+# d3arc.html
+
+https://gist.github.com/barionleg/e0ccf3988bab7bee03fd7745c1ad7ec9
+
+
+___
+
+___
+
+https://gist.github.com/barionleg/8cf8576edfe14890b84a3fe8f98e2f75
+
+# pie.chart.js
+
+
+___
+___
+
+# cinlet.js
+
+https://gist.github.com/barionleg/5b78865ee7f759f4d012cfdb9f6b5a97
+
