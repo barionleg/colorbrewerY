@@ -36,7 +36,7 @@ var arc = d3.svg.arc()
     .outerRadius(r);
 
 // Load the flight data asynchronously.
-d3.csv("flights.csv", function(error, flights) {
+d3.csv("lights.csv", function(error, flights) {
   if (error) throw error;
 
   // Nest the flight data by originating airport. Our data has the counts per
