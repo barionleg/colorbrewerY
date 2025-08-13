@@ -1,5 +1,24 @@
 # Clock code default:
 
+https://en.wikipedia.org/wiki/Michel_Eugène_Chevreul
+
+lokalt:   E:\Users\**\Pictures\Solar Audio\RYb
+
+<img width="656" height="552" alt="RYb_Chromatography_1841_Field" src="https://github.com/user-attachments/assets/df9d815f-4640-418c-b461-d7dfabd74726" />
+
+
+https://en.wikipedia.org/wiki/Color_scheme
+
+to uderstand time we have toe understande temphoeBrature, wich are synthesis of tempho = SPEEd & b PRussuR (s.c. pressure by ჼсоюзПРечÅть ) & ck 
+
+ÅSLAჼ ClÅudew Vill d3e
+
+https://barionleg.github.io/colorbrewerY/Clock/tempica.html
+
+![IMG_3315](https://github.com/user-attachments/assets/f527e027-85c7-41cf-bf74-516dda9bd322)
+
+
+
 ```
 <!DOCTYPE html>
 <meta charset="utf-8">
