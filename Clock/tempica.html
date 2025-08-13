@@ -10,7 +10,7 @@
 
 
 .path--background {
-  fill: yes;
+  fill: none;
   stroke: #0000D0;
   stroke-width: 2px;
 }
@@ -49,7 +49,7 @@ var fill = d3.scale.linear()
 
 var svg = d3.select("body").append("svg")
     .attr("width", 960)
-    .attr("height", 500)
+    .attr("height", 600)
   .append("g")
     .attr("transform", "translate(480,250)");
 
@@ -102,7 +102,7 @@ function changed() {
 			circles = [];
   
 var width = 960,
-    height = 500;
+    height = 600;
 
 var fields = [
   {value: 365, size: 365, label: "y", update: function(date) { return date.getYear(); }},
@@ -167,7 +167,7 @@ function arcTween(b) {
 
 </script>
   
-  <svg viewBox="0 0 960 500" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg">
     <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" x2="100" y1="50" y2="50">
         <stop offset=".0" stop-color="#0000ff" />
         <stop offset=".3" stop-color="#00ccff" />
