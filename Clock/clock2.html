@@ -34,12 +34,12 @@ var fields = [
   {value: 60, size: 60, label: "m", update: function(date) { return date.getMinutes(); }},
   {value: 60, size: 60, label: "s", update: function(date) { return date.getSeconds(); }}
 ];
-<!-- changed 38 to 45; 38 to 41 in index -->
+<!-- nun changed 38 to 41 in index -->
 var arc = d3.svg.arc()
-        .innerRadius(function(d) { return radius(d.y); })
-        .outerRadius(function(d) { return radius(d.y + 1); })
-        .startAngle(0)
-        .endAngle(Math.PI / 90))
+    .innerRadius(width / 6.5 - 60)
+    .outerRadius(width / 6.5 - 5)
+    .startAngle(0)
+    .endAngle(function(d) { return (d.value / d.size) * 2 * Math.PI; });
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
