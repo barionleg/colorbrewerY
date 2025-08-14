@@ -1,5 +1,5 @@
 var width = 960,
-    height = 400;
+    height = 360;
 
 var fields = [{
         value: 365,
