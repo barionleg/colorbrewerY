@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<style>
+
+body {
+  background: rgb(0.0.208.0,5);
+}
+
+input {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 240px;
+}
+  .path--background {
+  fill: none;
+  stroke: #0000D0;
+  stroke-width: 2px;
+}
+
+.path--foreground {
+  fill: rgb(0, 0, 208, 0.41);
+  color: ryb(0, 0, 208, 0.74);
+  }
+
+.label {
+  font: 24px sans-serif;
+  text-anchor: middle;
+}
+
+</style>
+</head>
+<body>
+<input type="range" min="0" max="358" step="2">
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+var radius = d3.scale.linear()
+    .domain([0, 9])
+    .range([120, 240]);
+
+var fill = d3.scale.linear()
+    .domain([0, 1])
+    .range(["brown", "steelblue"]);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", 960)
+    .attr("height", 500)
+  .append("g")
+    .attr("transform", "translate(480,250)");
+
+var g = svg.selectAll("g")
+    .data(d3.range(0, 360, 2))
+  .enter().append("g")
+    .attr("transform", function(d) { return "rotate(" + d + ")"; });
+
+var path = g.selectAll("path")
+    .data(function(p) {
+      return d3.range(10).map(function(d) {
+        return {
+          x: p, // outer dimension (angle)
+          y: d, // inner dimension (radius)
+          z: Math.random()
+        };
+      });
+    })
+  .enter().append("path")
+    .attr("d", d3.svg.arc()
+        .innerRadius(function(d) { return radius(d.y); })
+        .outerRadius(function(d) { return radius(d.y + 1); })
+        .startAngle(0)
+        .endAngle(Math.PI / 90))
+    .attr("fill", function(d) { return fill(d.z); })
+    .attr("fill-opacity", 1e-6);
+
+path.transition()
+    .delay(function(d) { return d.z * 1500; })
+    .attr("fill-opacity", 1);
+
+d3.select("input")
+    .on("input", changed)
+    .on("change", changed);
+
+function changed() {
+  var value = this.value;
+  path.attr("fill-opacity", function(d) {
+    return Math.max(0, 1 - Math.sqrt(Math.abs(d.x - value) / 80));
+  });
+}
+
+</script>
+
+</div>
+
+    <script src="https://barionleg.github.io/circles/circles.js"></script>
+<script>
+		var colors = [
+				['#D3B6C6', '#4B253A'], ['#FCE6A4', '#EFB917'], ['#BEE3F7', '#45AEEA'], ['#F8F9B6', '#D2D558'], ['#F4BCBF', '#D43A43']
+			],
+			arc = [];
+  
+var width = 960,
+    height = 500;
+
+var fields = [
+  {value: 365, size: 365, label: "y", update: function(date) { return date.getYear(); }},
+  {value: 13, size: 13, label: "m", update: function(date) { return date.getMonth(); }},
+  {value: 24, size: 24, label: "h", update: function(date) { return date.getHours(); }},
+  {value: 60, size: 60, label: "m", update: function(date) { return date.getMinutes(); }},
+  {value: 60, size: 60, label: "s", update: function(date) { return date.getSeconds(); }},
+];
+
+var monthLength = [28,28,28,28,28,28,28,28,28,28,28,28];
+
+var arc = d3.svg.arc()
+    .innerRadius(width / 10.5 - 60)
+    .outerRadius(width / 10.5 - 5)
+    .startAngle(0)
+    .endAngle(function(d) { return (d.value / d.size) * 2 * Math.PI; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var field = svg.selectAll(".field")
+    .data(fields)
+  .enter().append("g")
+    .attr("transform", function(d, i) { return "translate(" + (i * 2 + 1.25) / 10.5 * width + "," + height / 2 + ")"; })
+    .attr("class", "field");
+
+field.append("path")
+    .attr("class", "path path--background")
+    .attr("d", arc);
+
+var path = field.append("path")
+    .attr("class", "path path--foreground");
+
+var label = field.append("text")
+    .attr("class", "label")
+    .attr("dy", ".35em");
+
+(function update() {
+  var now = new Date();
+
+  field
+      .each(function(d) { d.previous = d.value, d.value = d.update(now); });
+
+  path.transition()
+      .ease("elastic")
+      .duration(750)
+      .attrTween("d", arcTween);
+ù:
+  label
+      .text(function(d) { return d.value + d.label; });
+
+  setTimeout(update, 1000 - (now % 1000));
+})();
+
+function arcTween(b) {
+  var i = d3.interpolate({value: b.previous}, b);
+  return function(t) {
+    return arc(i(t));
+  };
+}
+
+</script>
+  
+  <svg viewBox="0 0 960 500" xmlns="http://www.w3.org/2000/svg">
+    <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" x2="100" y1="50" y2="50">
+        <stop offset=".0" stop-color="#0000ff" />
+        <stop offset=".3" stop-color="#00ccff" />
+        <stop offset=".6" stop-color="#00ffd5" />
+        <stop offset=".9" stop-color="#00ff00" />
+    </linearGradient>
+    <g fill="none" stroke-miterlimit="10">
+        <arc cx="50" cy="50" r="40" stroke="url(#gradient)" stroke-linecap="round" stroke-width="10" />
+    </g>
+</svg>
+  
+</body>
+</html>
