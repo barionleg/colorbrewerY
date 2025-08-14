@@ -10,3 +10,9 @@ https://barionleg.github.io/colorbrewerY/Clock/moc.ejo_ole.com/ole.com.html
 https://learn.microsoft.com/en-us/windows/win32/com/hkey-local-machine-software-microsoft-ole
 
 <img width="674" height="474" alt="image" src="https://github.com/user-attachments/assets/f4323d90-b9a6-4ee9-b24d-79eca3704539" />
+
+# ENTRÅ Pµ
+
+https://learn.microsoft.com/ru-ru/entra/identity/hybrid/connect/cloud-governed-management-for-on-premises
+
+Как Microsoft Entra ID обеспечивает облачное управляемое управление для локальных рабочих нагрузок.
