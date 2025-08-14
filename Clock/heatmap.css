@@ -1,0 +1,10 @@
+body {
+  background: rgb(0.0.208.0,1);
+}
+
+input {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 240px;
+}
