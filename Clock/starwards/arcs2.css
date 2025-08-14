@@ -1,3 +1,7 @@
+body {
+  background: none;
+}
+
 .path--background {
   fill: none;
   stroke: #0000D0;
