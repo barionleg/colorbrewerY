@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+    <link rel="Stylesheet" type="text/css" href="arcs.css" />
+        <style>
+      .info {
+        padding: 20px;
+      }
+      .example {
+        overflow: auto;
+        border-bottom: 1px solid rgba(0,0,0,0.6);
+        box-sizing: border-box;
+        clear: both;
+        margin-bottom: 30px;
+      }
+      .example > .code, .example > .display {
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      .example > .code {
+      }
+      .example > .display {
+        text-align: center;
+        overflow: auto;
+        padding: 20px 0;
+        overflow: hidden;
+      }
+      .example > .display {
+      }
+
+      pre {
+        padding: 0;
+        margin: 0;
+      }
+
+
+
+      @media only screen and (min-device-width: 768px) {
+        .gauge-container {
+          width: 200px;
+          height: 200px;
+        }
+        .example > .code {
+          width: 65%;
+          float: left;
+        }
+        .example > .display {
+          width: 35%;
+          float: right;
+          padding: 10px;
+        }
+      }
+    </style>
+
+    <script type="text/javascript" src="https://barionleg.github.io/svg-gauge/example/highlight.pack.js"> </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    
+<script src="//d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="https://barionleg.github.io/svg-gauge/src/gauge.js"> </script>
+
+      <div class="example">
+      <div class="code">
+        <pre>
+<code class="html">
+  &lt;div id="gauge3" class="gauge-container three"&gt;&lt;/div&gt;
+</code>
+<code class="javascript">
+  var gauge3 = Gauge(
+    document.getElementById("gauge3"),
+    {
+      max: 100,
+      value: 50
+    }
+  );
+</code>
+</pre>
+</div>
+<div class="display">
+<div id="gauge3" class="gauge-container three"></div>
+</div>
+    <script>
+
+      var pad = function(tar) {}
+
+      var gauge0 = Gauge(document.getElementById("gauge0"));
+
+      var gauge3 = Gauge(
+        document.getElementById("gauge3"),
+		    {
+          max: 100,
+          value: 50
+        }
+      );
+
+
+
+      (function loop() {
+        var value1 = Math.random() * 100,
+            value2 = Math.random(),
+            value3 = Math.random() * 100,
+            value4 = Math.random() * 100,
+            value5 = Math.random() * 200;
+
+
+        gauge3.setValueAnimated(value3, 1.5);
+
+        window.setTimeout(loop, 4000);
+      })();
+    </script>
+        </div>
+
+  <script type="text/javascript" src="tempicad3e.js"></script>
+</div>
+
+</body>
+</html>
