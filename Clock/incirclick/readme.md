@@ -1139,3 +1139,15 @@ The following table shows how various identities appear when τ = 2π is used in
 <!--EndFragment-->
 </body>
 </html>
+
+
+# gists:
+
+https://gist.github.com/barionleg/c3ea103a8d1249b0cd1f42745d4836b1
+
+https://gist.github.com/barionleg/2c7eb7adb06db6d9bfda16c8bf965993
+
+https://gist.github.com/barionleg/640611f359d6cc5a7723a00e9b291f2d
+
+https://github.com/barionleg/colorbrewerY/wiki/Voronoi_Spirals_II
+
