@@ -6,5 +6,4 @@ OBS! Simbolerna PÅ HögbÆRg HAgel Winstitutets Setkva by Sitkwa (Winterlaჼg 
 
 SAAmi T.E.m.P.h.iCA Circlar relaterad till enad Rymdhästighets (i CA), tid, mass, energi, pressuRe, för att bestämma korrekt och balanserad marschrüttight fart av det Boende och Vridande Planet (då Planterat av vår roots) 
 
-
-
+<img width="512" height="512" alt="image" src="https://raw.githubusercontent.com/barionleg/colorbrewerY/refs/heads/master/Clock/wiki/favicons/favicons/tavicon-maskable-512x512.png" />
