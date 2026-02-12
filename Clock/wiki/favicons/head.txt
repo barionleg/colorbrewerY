@@ -1,0 +1,40 @@
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://barionleg.github.io/colorbrewerY/Clock/temphica.html" />
+<meta property="og:title" content="T.E.m.P.h.iCA" />
+<meta property="og:site_name" content="https://barionleg.github.io/colorbrewerY/Clock/temphica.html" />
+<meta property="og:description" content="Tids och Rymdhästighets relaterad ß_CirclAR" />
+<meta property="og:image" content="https://barionleg.github.io/faviconm/assets/screenshoot.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta name="author" content="barionleg ingéniEuR dr. Aibolem ibANKNÅTOPRÅd by d'bA₽p (ДВАРп)" />
+<meta name="description" content="Tids och Rymdhästighets relaterad ß_CirclAR" />
+<meta name="keywords" content="SAAmi T.E.m.P.h.iCA Circlar relaterad till enad Rymdhästighets (i CA), tid, mass, energi, pressuRe, för att bestämma korrekt och balanserad marschrüttight fart av det Boende och Vridande Planet (då Planterat av vår roots)" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="T.E.m.P.h.iCA" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-title" content="T.E.m.P.h.iCA" />
+<link rel="apple-touch-icon" sizes="57x57" href="tvicons/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="tvicons/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="tvicons/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="tvicons/apple-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="tvicons/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="tvicons/apple-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="tvicons/apple-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="tvicons/apple-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="tvicons/apple-icon-180x180.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="tvicons/tavicon-512x512.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="tvicons/tavicon-192x192.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="tvicons/tavicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="tvicons/tavicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="tvicons/tavicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="tvicons/tavicon-16x16.png" />
+<link rel="Shortcut Icon" href="tvicons/favicon.png" />
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="msapplication-config" content="browserconfig.xml" />
+<meta name="theme-color" content="#222222" />
+
+<title>T.E.m.P.h.iCA</title>
