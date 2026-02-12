@@ -7,4 +7,4 @@ OBS! Simbolerna PÅ HögbÆRg HAgel Winstitutets Setkva by Sitkwa (Winterlaჼg 
 SAAmi T.E.m.P.h.iCA Circlar relaterad till enad Rymdhästighets (i CA), tid, mass, energi, pressuRe, för att bestämma korrekt och balanserad marschrüttight fart av det Boende och Vridande Planet (då Planterat av vår roots) 
 
 
-<img width="640" height="849" alt="TEmPiCA_SAAmPi_Circless" src="https://github.com/user-attachments/assets/bafb1863-27e7-4332-a150-ab262c96478e" />
+
