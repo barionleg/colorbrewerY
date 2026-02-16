@@ -1151,3 +1151,8 @@ https://gist.github.com/barionleg/640611f359d6cc5a7723a00e9b291f2d
 
 https://github.com/barionleg/colorbrewerY/wiki/Voronoi_Spirals_II
 
+# gistviewer
+
+https://github.com/barionleg/baegaistview/wiki
+
+
